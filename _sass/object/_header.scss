@@ -1,0 +1,89 @@
+////
+/// Header
+////
+
+.site-header {
+  padding: 0.5rem 0 $base-line;
+  text-align: center;
+  .wrapper {
+    @media #{$medium-up} {
+      display: flex;
+      align-content: center;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  .site-title {
+    display: block;
+    margin: 0 auto;
+    font-size: $base-em * $ms4;
+    @media #{$medium-up} {
+      font-size: $base-em * $ms6;
+    }
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    &:hover {
+      opacity: 0.88;
+      text-decoration: underline;
+    }
+  }
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus,
+.site-header nav a:active {
+  border-bottom: 2px solid #444;
+  text-decoration: none;
+}
+
+
+.nav-main {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media #{$medium-up} {
+      justify-content: flex-end;
+    }
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+
+  }
+  li {
+    flex: 1;
+    text-align: center;
+    max-width: 10rem;
+  }
+  a {
+    font-weight: bold;
+    & + & {
+       margin-left: 1em;
+    }
+  }
+}
+
+.exergue {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  small {
+    display: block;
+    clear: both;
+    width: 100%;
+  }
+  a {
+    color: #fff;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  background: #000;
+}

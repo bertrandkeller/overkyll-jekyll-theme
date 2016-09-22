@@ -1,0 +1,27 @@
+<head itemscope itemtype="http://schema.org/WebSite">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS Feed" href="http://bertrandkeller.info/feed/"/>
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <style type="text/css">
+    {% capture include_to_scssify %}
+      {% include base.scss %}
+
+    {% endcapture %}
+    {{ include_to_scssify | scssify }}
+  </style>
+  <script>
+    {% include loadCSS.js %}
+    loadCSS("{{ "/assets/css/style.css" | prepend: site.baseurl }}");
+    {% include localfont.js %}
+  </script>
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
+  <noscript><link rel="stylesheet" href="/assets/css/font.css"></noscript>
+  {% include favicons.html %}
+
+</head>

@@ -1,0 +1,21 @@
+<header class="site-header">
+
+  <div class="wrapper">
+
+    <div class="site-logo">
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
+
+    <nav class="nav-main">
+      <ul>
+        {% for page in site.pages %}
+          {% if page.navigation %}
+          <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+
+  </div>
+
+</header>

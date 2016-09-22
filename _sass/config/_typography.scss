@@ -1,0 +1,154 @@
+////
+/// Typography
+////
+
+// Our variables
+//-------------------------------------
+$base-font-family:        Overpass, Helvetica, Arial, sans-serif;
+$base-font-size:          16px;
+$small-font-size:         $base-font-size * 0.875;
+
+$ratio:                   1.20;
+$base:                    1;
+$base-em:                 $base * 1em;
+$base-px:                 $base * 16px;
+
+$ms0:                     1;
+$ms1:                     $ratio;        /* 1.2   */
+$ms2:                     $ratio * $ms1; /* 1.44  */
+$ms3:                     $ratio * $ms2; /* 1.728 */
+$ms4:                     $ratio * $ms3; /* 2.074 */
+$ms5:                     $ratio * $ms4; /* 2.488 */
+$ms6:                     $ratio * $ms5; /* 2.986 */
+$ms7:                     $ratio * $ms6; /* 3.583 */
+
+$small:                   $base-em / $ms1;
+$normal:                  $base-em * $ms0;
+$big:                     $base-em * $ms1;
+$bigger:                  $base-em * $ms2;
+$title2:                  $base-em * $ms3;
+$title1:                  $base-em * $ms4;
+
+$line-height-base:        $base * $ms2;
+$line-height-computed:    floor(($base-em * $line-height-base));
+$base-line:               $line-height-computed;
+
+body {
+  font-family: $base-font-family;
+  font-weight: 400;
+  font-size: $base-em * $ms0;
+  line-height: $base * $ms2;
+}
+
+h3,
+h2 { line-height: $base * $ms1; }
+h1 { line-height: $base * $ms0; }
+
+h6, .h6 { font-size: $small; }
+h5, .h5 { font-size: $normal; }
+h4, .h4 { font-size: $big; }
+h3, .h3 { font-size: $bigger; }
+h2, .h2 { font-size: $title2; }
+h1, .h1 { font-size: $title1; }
+
+@media #{$medium-up} {
+  body { font-size: $base-em * $ms1; }
+  h3, .h3 { font-size: $base-em * $ms3; }
+  h2, .h2 { font-size: $base-em * $ms4; }
+  h1, .h1 { font-size: $base-em * $ms5; }
+}
+
+@media #{$large-up} {
+  h2, .h2 { font-size: $base-em * $ms5; }
+  h1, .h1 { font-size: $base-em * $ms6; }
+}
+
+@media #{$xlarge-up} {
+  h1, .h1 { font-size: $base-em * $ms7; }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  word-wrap: break-word;
+  margin-top: $line-height-computed;
+  margin-bottom: ($line-height-computed / 2);
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: ($line-height-computed / 2);
+  margin-bottom: ($line-height-computed / 2);
+
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  &,a {
+    text-decoration: none;
+  }
+}
+
+p {
+  margin: 0 0 ($line-height-computed / 2);
+}
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: ($line-height-computed / 2);
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+// List options
+
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  @extend .list-unstyled;
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+// Description Lists
+dl {
+  margin-top: 0; // Remove browser default
+  margin-bottom: $line-height-computed;
+}
+dt,
+dd {
+  line-height: $line-height-base;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0; // Undo browser default
+}
+

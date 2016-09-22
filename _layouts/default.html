@@ -1,0 +1,22 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+  {% include head.html %}
+
+  <body itemscope itemtype="http://schema.org/WebPage">
+
+    {% include header.html %}
+
+    <div class="page">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div> 
+    <script src="{{ site.baseurl }}/assets/js/instantclick.min.js" data-no-instant></script>
+  </body>
+
+</html>

@@ -1,0 +1,59 @@
+////
+/// Layout
+////
+
+$gutter: $base-em;
+$number: 4; // for equal columns
+
+/**
+ * Page & Wrapper
+ */
+
+.page {
+  padding-bottom: $base-line*4;
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $base-line / 2;
+  padding-left: $base-line / 2;
+  max-width: 50rem;
+}
+
+// Inspired from Raphaël Goetter Knacss grid
+// grid styles for container wich has a .grid(n,g) class
+// n = number of columns (default = 4)
+// g = gutter value (default = 1em)
+// example : .grid { .grid(12, 10px); }
+
+@mixin grid($number:$number, $gutter:$gutter) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -$gutter;
+  margin-bottom: $base-line;
+
+  /* inline-block fallback for IE9 generation */
+  letter-spacing: -0.31em;
+  text-rendering: optimizespeed;
+  & > * {
+    flex: 0 0 auto;
+    width: calc(100% * 1 / #{$number} - #{$gutter} - .01px);
+    margin-left: $gutter;
+    margin-bottom: $base-line;
+
+    /* inline-block fallback for IE9 generation */
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+    text-rendering: auto;
+  }
+  & > .flexitem-double {
+    width: calc(100% * 2 / #{$number} - #{$gutter});
+  }
+  & > .flexitem-first {
+    order: -1;
+  }
+}
+

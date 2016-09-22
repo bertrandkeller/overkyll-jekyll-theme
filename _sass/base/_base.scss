@@ -1,0 +1,141 @@
+////
+/// Very basic style
+////
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// *, :after, :before {
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
+
+a {
+  text-decoration: underline;
+  color: $color-primary;
+}
+
+// a[href]:not([class]) {
+//   text-decoration: underline;
+//   color: $color-primary;
+// }
+
+
+/**
+ * Images
+ */
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+/**
+ * Figures
+ */
+
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+
+/**
+ * Links
+ */
+
+a {
+  text-decoration: underline;
+  color: palette(primary);
+  &:visited {
+    color: palette(primary);
+  }
+  &:hover {
+    text-decoration: underline;
+    color: palette(primary, dark);
+  }
+}
+
+/**
+ * Lists
+ */
+
+ul,ol {
+  margin-bottom: $base-line;
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/**
+ * Blockquotes
+ */
+
+blockquote {
+  padding-left: $base-line / 2;
+  font-size: $base-em * $ms1;
+  letter-spacing: -1px;
+  color: $grey-color;
+  border-left: 4px solid $grey-color;
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/**
+ * Code formatting
+ */
+
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+  background-color: #eef;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  overflow-x: scroll;
+  padding: 8px 12px;
+  > code {
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+  }
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border: 1px solid #ccc;
+  > thead, > tbody, > tfoot {
+    > tr {
+      > th, > td {
+        border: 1px solid #ccc;
+      }
+    }
+  }
+  > thead > tr {
+    > th, > td {
+      border-bottom-width: 2px;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+/* Webfont: Overpass-Bold */@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Overpass-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Overpass-Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Overpass-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Overpass-Bold.svg#Overpass-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+///* Webfont: Overpass-BoldItalic */@font-face {
+//     font-family: 'Overpass';
+//     src: url('../fonts/Overpass-Bold-Italic.eot'); /* IE9 Compat Modes */
+//     src: url('../fonts/Overpass-Bold-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//          url('../fonts/Overpass-Bold-Italic.woff') format('woff'), /* Modern Browsers */
+//          url('../fonts/Overpass-Bold-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+//          url('../fonts/Overpass-Bold-Italic.svg#Overpass-BoldItalic') format('svg'); /* Legacy iOS */
+//     font-style: italic;
+//     font-weight: 700;
+//     text-rendering: optimizeLegibility;
+// }
+
+/* Webfont: Overpass-Reg */@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Overpass-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Overpass-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Overpass-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Overpass-Regular.svg#Overpass-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: Overpass-Italic */@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass-Italic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Overpass-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Overpass-Italic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Overpass-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Overpass-Italic.svg#Overpass-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: Overpass-Light */@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Overpass-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Overpass-Light.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Overpass-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Overpass-Light.svg#Overpass-Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+// /* Webfont: Overpass-LightItalic */@font-face {
+//     font-family: 'Overpass';
+//     src: url('../fonts/Overpass-Light-Italic.eot'); /* IE9 Compat Modes */
+//     src: url('../fonts/Overpass-Light-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//          url('../fonts/Overpass-Light-Italic.woff') format('woff'), /* Modern Browsers */
+//          url('../fonts/Overpass-Light-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+//          url('../fonts/Overpass-Light-Italic.svg#Overpass-LightItalic') format('svg'); /* Legacy iOS */
+//     font-style: italic;
+//     font-weight: normal;
+//     text-rendering: optimizeLegibility;
+// }
+
+/* Webfont: Overpass-ExtraLight */@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass-ExtraLight.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Overpass-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Overpass-ExtraLight.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Overpass-ExtraLight.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Overpass-ExtraLight.svg#Overpass-ExtraLight') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+// /* Webfont: Overpass-ExtraLightItalic */@font-face {
+//     font-family: 'Overpass';
+//     src: url('../fonts/Overpass-ExtraLight-Italic.eot'); /* IE9 Compat Modes */
+//     src: url('../fonts/Overpass-ExtraLight-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//          url('../fonts/Overpass-ExtraLight-Italic.woff') format('woff'), /* Modern Browsers */
+//          url('../fonts/Overpass-ExtraLight-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+//          url('../fonts/Overpass-ExtraLight-Italic.svg#Overpass-ExtraLightItalic') format('svg'); /* Legacy iOS */
+//     font-style: italic;
+//     font-weight: 300;
+//     text-rendering: optimizeLegibility;
+// }
+
+
+// /* latin */
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 300;
+//   src: local('Open Sans Light'), local('OpenSans-Light'), url(../fonts/Open-Sans-light.woff2) format('woff2');
+//   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+// }
+
+// /* latin */
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Open Sans'), local('OpenSans'), url(../fonts/Open-Sans-normal.woff2) format('woff2');
+//   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+// }
+
+// /* latin */
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../fonts/Open-Sans-bold.woff2) format('woff2');
+//   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+// }
