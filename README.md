@@ -23,7 +23,7 @@ Jekyll requires Ruby so make sure Ruby is installed before you begin.
   - Open `_config.yml` and change the line `theme: minima` to this:
     - `theme: overkyll-jekyll-theme`
 - Import the Overkyll CSS
-  - Open your `css/style.css` and change the line `@import "minima;"` to this:
+  - Open your `css/main.scss` and change the line `@import "minima;"` to this:
     - `@import "overkyll";`
 
 
@@ -38,7 +38,7 @@ Jekyll requires Ruby so make sure Ruby is installed before you begin.
   - Open `_config.yml` and change the line `theme: minima` to this:
     - `theme: overkyll-jekyll-theme`
 - Import the overkyll CSS
-  - Open your `css/style.css` and change the line `@import "minima;"` to this:
+  - Open your `css/main.scss` and change the line `@import "minima;"` to this:
     - `@import "overkyll";`
 
 # Jekyll 2.x Method
