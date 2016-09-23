@@ -11,16 +11,15 @@
   <style type="text/css">
     {% capture include_to_scssify %}
       {% include base.scss %}
-
     {% endcapture %}
     {{ include_to_scssify | scssify }}
   </style>
   <script>
     {% include loadCSS.js %}
-    loadCSS("{{ "/assets/css/style.css" | prepend: site.baseurl }}");
+    loadCSS("{{ "/css/main.css" | prepend: site.baseurl }}");
     {% include localfont.js %}
   </script>
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
   <noscript><link rel="stylesheet" href="/assets/css/font.css"></noscript>
   {% include favicons.html %}
 
