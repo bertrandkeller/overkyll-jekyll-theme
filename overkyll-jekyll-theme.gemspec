@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "overkyll-jekyll-theme"
-  spec.version       = "0.2"
+  spec.version       = "0.3"
   spec.authors       = ["bertrandkeller"]
   spec.email         = ["bertrand.keller@gmail.com"]
 
-  spec.summary       = "A simple starter theme with an ITCSS Sass files organisation, a flexbox grid and modular typography "
+  spec.summary       = "A simple starter theme with an ITCSS Sass files organisation, a flexbox grid and modular typography"
   spec.homepage      = "https://github.com/bertrandkeller/overkyll-jekyll-theme"
   spec.license       = "MIT"
 
