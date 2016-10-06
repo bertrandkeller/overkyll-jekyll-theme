@@ -3,7 +3,7 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
 
   {% include head.html %}
 
@@ -11,12 +11,12 @@ layout: compress
 
     {% include header.html %}
 
-    <div class="page">
+    <main id="main" class="page">
       <div class="wrapper">
         {{ content }}
       </div>
-    </div> 
-    <script src="{{ site.baseurl }}/assets/js/instantclick.min.js" data-no-instant></script>
+    </main> 
   </body>
 
+  <script src="{{ site.baseurl }}/assets/js/instantclick.min.js" data-no-instant></script>
 </html>
