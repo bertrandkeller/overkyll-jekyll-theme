@@ -17,7 +17,7 @@ navigation: true
   <h2 id="date-{{currentdate}}">{{ currentdate }}</h2>
   <ul class="posts-archive">
   {% endif %}
-  <li class="posts-archive__links"><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></li>
+  <li class="posts-archive__links"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% assign date = currentdate %}
   {% if forloop.last %}
   </ul><!--/posts-archive-last-->
