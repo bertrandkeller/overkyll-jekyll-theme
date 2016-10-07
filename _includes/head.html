@@ -17,10 +17,9 @@
   </style>
   <script>
     {% include loadCSS.js %}
-    loadCSS("{{ '/assets/css/main.css' | relative_url }}");
+    loadCSS("{{ '/assets/css/main.css' | prepend: site.baseurl }}");
     {% include localfont.js %}
   </script>
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  <noscript><link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}"></noscript>
+  <noscript><link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}"></noscript>
   {% include favicons.html %}
 </head>
