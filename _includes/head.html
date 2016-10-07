@@ -3,7 +3,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS Feed" href="/feed/"/>
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }} RSS Feed" href="{{ "/feed/" | absolute_url }}"/>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
@@ -16,9 +17,9 @@
   </style>
   <script>
     {% include loadCSS.js %}
-    loadCSS("{{ "/css/main.css" | prepend: site.baseurl }}");
+    loadCSS("{{ '/assets/css/main.css' | relative_url }}");
     {% include localfont.js %}
   </script>
-  <noscript><link rel="stylesheet" href="/assets/css/font.css"></noscript>
+  <noscript><link rel="stylesheet" href="{{ "/assets/css/font.css" | relative_url }}"></noscript>
   {% include favicons.html %}
 </head>
