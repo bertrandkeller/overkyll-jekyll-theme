@@ -16,7 +16,7 @@ layout: deafault
         {{ content }}
       </div>
     </main>
-    <script src="{{ site.baseurl }}/assets/js/instantclick.min.js" data-no-instant></script>
+    <script src={{ "/assets/js/instantclick.min.js" | relative_url }}  data-no-instant></script>
     <script data-no-instant>
       InstantClick.init();
     </script>
