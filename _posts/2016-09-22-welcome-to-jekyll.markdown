@@ -19,7 +19,7 @@ It implements this differents technologies :
  5. [LoadingCSS][loadingCSS] A function for loading CSS asynchronously
  6. [Overpass][overpass] An open source webfont family inspired by Highway Gothic
 
-A Archive page list all the post by year.
+An Archive page list all the post by year.
 
 ## Jekyll
 
