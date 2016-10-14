@@ -8,7 +8,7 @@ Very minimal starter theme for Jekyll.
 
 ## Overkyll jekyll theme ##
 
-Fast and light, it can be use for a small blog or as a theme for starting a bigger site. 
+Fast and light, it can be use for a small blog or as a theme for starting a bigger site. Find the code of [overkyll on Github](https://github.com/bertrandkeller/overkyll-jekyll-theme)
 
 It implements this differents technologies :
 
@@ -19,7 +19,7 @@ It implements this differents technologies :
  5. [LoadingCSS][loadingCSS] A function for loading CSS asynchronously
  6. [Overpass][overpass] An open source webfont family inspired by Highway Gothic
 
-An Archive page list all the post by year.
+An Archive page list all the posts by year.
 
 ## Jekyll
 
