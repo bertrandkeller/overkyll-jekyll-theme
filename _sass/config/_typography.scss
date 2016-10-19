@@ -5,8 +5,6 @@
 // Our variables
 //-------------------------------------
 $base-font-family:        Overpass, Helvetica, Arial, sans-serif;
-$base-font-size:          16px;
-$small-font-size:         $base-font-size * 0.875;
 
 $ratio:                   1.20;
 $base:                    1;
@@ -59,6 +57,7 @@ h1, .h1 { font-size: $title1; }
 }
 
 @media #{$large-up} {
+  body { font-size: $base-em * $ms2; }
   h2, .h2 { font-size: $base-em * $ms5; }
   h1, .h1 { font-size: $base-em * $ms6; }
 }
