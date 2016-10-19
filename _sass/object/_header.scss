@@ -16,8 +16,8 @@
   }
   .site-title {
     display: block;
-    margin: 0 auto;
-    font-size: $base-em * $ms4;
+    margin: $base-line/2 auto;
+    font-size: $base-em * $ms5;
     @media #{$medium-up} {
       font-size: $base-em * $ms6;
     }
@@ -31,11 +31,15 @@
   }
 }
 
-.site-header nav a:hover,
-.site-header nav a:focus,
-.site-header nav a:active {
-  border-bottom: 2px solid #444;
-  text-decoration: none;
+.site-header {
+  nav {
+    a {
+      &:hover,&:focus,&:active {
+        text-decoration: none;
+        border-bottom: 2px solid #444;
+      }
+    }
+  }
 }
 
 

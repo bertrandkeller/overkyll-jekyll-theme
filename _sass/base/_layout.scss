@@ -31,16 +31,26 @@ $number: 4; // for equal columns
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: -$gutter;
+  margin-left: -2vw;
+  margin-right: -2vw;
+  @media #{$medium-up} {
+    margin-left: -$gutter/2;
+    margin-right: -$gutter/2;
+  }
   margin-bottom: $base-line;
 
   /* inline-block fallback for IE9 generation */
   letter-spacing: -0.31em;
   text-rendering: optimizespeed;
   & > * {
-    flex: 0 0 auto;
-    width: calc(100% * 1 / #{$number} - #{$gutter} - .01px);
-    margin-left: $gutter;
+    flex: 1 0 10em;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    @media #{$medium-up} {
+      flex: 0 0 calc(100% * 1 / #{$number} - #{$gutter} - .01px);
+      margin-left: $gutter/2;
+      margin-right: $gutter/2;
+    }
     margin-bottom: $base-line;
 
     /* inline-block fallback for IE9 generation */
@@ -57,3 +67,6 @@ $number: 4; // for equal columns
   }
 }
 
+.grid {
+  @include grid();
+}
