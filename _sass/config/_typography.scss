@@ -51,19 +51,14 @@ h1, .h1 { font-size: $title1; }
 
 @media #{$medium-up} {
   body { font-size: $base-em * $ms1; }
-  h3, .h3 { font-size: $base-em * $ms3; }
-  h2, .h2 { font-size: $base-em * $ms4; }
-  h1, .h1 { font-size: $base-em * $ms5; }
 }
 
 @media #{$large-up} {
   body { font-size: $base-em * $ms2; }
-  h2, .h2 { font-size: $base-em * $ms5; }
-  h1, .h1 { font-size: $base-em * $ms6; }
 }
 
 @media #{$xlarge-up} {
-  h1, .h1 { font-size: $base-em * $ms7; }
+  body { font-size: $base-em * $ms3; }
 }
 
 h1, .h1,
