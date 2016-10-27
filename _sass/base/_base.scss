@@ -24,9 +24,9 @@ a {
 // }
 
 
-/**
- * Images
- */
+
+// Images
+// -------------------------
 
 img {
   max-width: 100%;
@@ -34,9 +34,8 @@ img {
 }
 
 
-/**
- * Figures
- */
+// Figures
+// -------------------------
 
 figure > img {
   display: block;
@@ -46,10 +45,8 @@ figcaption {
   font-size: $small;
 }
 
-
-/**
- * Links
- */
+// Links
+// -------------------------
 
 a {
   text-decoration: underline;
@@ -63,9 +60,8 @@ a {
   }
 }
 
-/**
- * Lists
- */
+// Lists
+// -------------------------
 
 ul,ol {
   margin-bottom: $base-line;
@@ -74,9 +70,8 @@ ul,ol {
   }
 }
 
-/**
- * List options
- */
+// List options
+// -------------------------
 
 // Unstyled keeps list items block level, just removes default browser padding and list-style
 .list-unstyled {
@@ -96,9 +91,8 @@ ul,ol {
   }
 }
 
-/**
- * Description Lists
- */
+// Description Lists
+// -------------------------
 
 dl {
   margin-top: 0; // Remove browser default
@@ -115,11 +109,8 @@ dd {
   margin-left: 0; // Undo browser default
 }
 
-
-
-/**
- * Blockquotes
- */
+// Blockquotes
+// -------------------------
 
 blockquote {
   padding-left: $base-line / 2;
@@ -133,9 +124,8 @@ blockquote {
 }
 
 
-/**
- * Code formatting
- */
+// Code formatting
+// -------------------------
 
 pre,
 code {
