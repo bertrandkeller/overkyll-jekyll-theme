@@ -1,5 +1,7 @@
 # Overkyll Jekyll Theme
 
+![Screenshot of Overkyll](screenshot.png)
+
 ## Install as Gem Theme
 
 Jekyll requires Ruby so make sure Ruby is installed before you begin.
