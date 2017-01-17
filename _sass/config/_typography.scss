@@ -42,7 +42,7 @@ h3,
 h2 { line-height: $base * $ms1; }
 h1 { line-height: $base * $ms0; }
 
-h6, .h6 { font-size: $small; }
+h6, .h6 { font-size: $smaller; }
 h5, .h5 { font-size: $normal; }
 h4, .h4 { font-size: $bigger; }
 h3, .h3 { font-size: $title3; }
@@ -62,16 +62,24 @@ h1, .h1 { font-size: $title1; }
   }
 }
 
-@media #{$xlarge-up} {
+@media #{$large-up} {
   body {
     font-size: $base-em * $ms1;
-    @include csslock-fontsize($medium,$xlarge,$ms1,$ms2);
+    @include csslock-fontsize($large,$xlarge,$ms1,$ms2);
+  }
+}
+
+@media #{$xlarge-up} {
+  body {
+    font-size: $base-em * $ms2;
+    @include csslock-fontsize($xlarge,$xxlarge,$ms2,$ms4);
   }
 }
 
 @media #{$xxlarge-up} {
   body {
-    font-size: $base-em * $ms2;
+    font-size: $base-em * $ms4;
+    @include csslock-fontsize($xxlarge,200,$ms4,$ms5);
   }
 }
 
