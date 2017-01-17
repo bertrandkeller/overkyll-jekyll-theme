@@ -2,10 +2,20 @@
 /// Header
 ////
 
+// Site Header
 .site-header {
-  padding: 0.5rem 0 $base-line;
+  padding: 0.5em 0 0;
   text-align: center;
+  @media #{$medium-up} {
+    padding-bottom: $base-line;
+  }
   .wrapper {
+    @media #{$small-only} {
+      padding: 0;
+      max-width: 100%;
+    }
+  }
+  .wrapper--flex {
     @media #{$medium-up} {
       display: flex;
       align-content: center;
@@ -19,7 +29,8 @@
     margin: $base-line/2 auto;
     font-size: $base-em * $ms5;
     @media #{$medium-up} {
-      font-size: $base-em * $ms6;
+      margin: 0 auto;
+      font-size: $base-em * $ms5;
     }
     font-weight: 600;
     color: #000;
@@ -42,28 +53,42 @@
   }
 }
 
+// Navigation main
+// inspired https://medium.com/@kollinz/hamburger-menu-alternatives-for-mobile-navigation-a3a3beb555b8#.hg6g5yhtd
 
 .nav-main {
-  display: flex;
-  align-items: center;
   flex: 1;
+  @media #{$small-only} {
+    overflow-y: hidden !important;
+    height: 40px !important;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
   ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    @media #{$medium-up} {
-      justify-content: flex-end;
-    }
     margin: 0;
-    padding: 0;
-    width: 100%;
+    padding: 0.3em 0;
+    min-width: 100%;
     list-style: none;
-
+    text-align: center;
+    @media #{$small-only} {
+      display: block;
+      white-space: nowrap;
+      padding-bottom: 100px !important;
+      overflow-y: hidden;
+      overflow-x: auto;
+    }
+    @media #{$medium-up} {
+      margin-top: 1rem;
+      .wrapper--flex & {
+        text-align: right;
+      }
+    }
   }
   li {
-    flex: 1;
+    display: inline-block;
     text-align: center;
-    max-width: 10rem;
+    margin: 0;
+    padding: 0.2rem 1.6rem 0;
   }
   a {
     font-weight: bold;
@@ -73,11 +98,14 @@
   }
 }
 
+// Exergue
+
 .exergue {
-  padding: 1rem;
+  padding: 1em;
   width: 100%;
   text-align: center;
   color: #fff;
+  background: #000;
   small {
     display: block;
     clear: both;
@@ -89,5 +117,4 @@
       text-decoration: none;
     }
   }
-  background: #000;
 }
