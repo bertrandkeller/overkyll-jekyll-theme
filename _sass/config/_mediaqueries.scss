@@ -2,27 +2,28 @@
 /// Media queries
 ////
 
-// Media Query Ranges
-//-------------------------------------
-
-$tiny-range                 : (0em, 30em) !default;
-$small-range                : (0em, 48em) !default;
-$medium-range               : (48.063em, 64em) !default;
-$large-range                : (64.063em, 90em) !default;
-$xlarge-range               : (90.063em, 120em) !default;
-$xxlarge-range              : (120.063em, 99999999em) !default;
-
-
 // Media Query breakpoint
 //-------------------------------------
 
 $screen:                    "only screen";
 $small:                     0;
-$tiny:                      30.063em;  /*480px */
-$medium:                    48.063em;  /*768px */
-$large:                     64.063em;  /*1025px*/
-$xlarge:                    90.063em;  /*1441px*/
-$xxlarge:                   120em;     /*1921px*/
+$tiny:                      37.5;   /*600px */
+$medium:                    56.25;  /*900px */
+$large:                     75;     /*1200px*/
+$xlarge:                    112.5;  /*1800px*/
+$xxlarge:                   150;    /*2400px*/
+
+
+// Media Query Ranges
+//-------------------------------------
+
+$tiny-range                 : (0em, $tiny * 1em) !default;
+$small-range                : (0em, $medium * 1em - 0.063em) !default;
+$medium-range               : ($medium * 1em + 0.063em, $large * 1em) !default;
+$large-range                : ($large * 1em + 0.063em, $xlarge * 1em) !default;
+$xlarge-range               : ($xlarge * 1em + 0.063em, $xxlarge * 1em) !default;
+$xxlarge-range              : ($xxlarge * 1em + 0.063em, 99999999em) !default;
+
 
 
 // Media Query Ranges :: Mixin (from Foundation CSS)
@@ -70,9 +71,9 @@ $debug: false;
 
 // Unison media
 $mq-sync:
-usn-small           $small,
-usn-medium          $medium,
-usn-large           $large
+usn-small           $small * 1em,
+usn-medium          $medium * 1em,
+usn-large           $large * 1em
 ;
 // usn-large          $large,
 // usn-x-large        $xlarge,
