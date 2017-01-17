@@ -20,10 +20,10 @@ $ms5:                     $ratio * $ms4; /* 2.488 */
 $ms6:                     $ratio * $ms5; /* 2.986 */
 $ms7:                     $ratio * $ms6; /* 3.583 */
 
-$small:                   $base-em / $ms1;
+$smaller:                 $base-em / $ms1;
 $normal:                  $base-em * $ms0;
-$big:                     $base-em * $ms1;
-$bigger:                  $base-em * $ms2;
+$bigger:                  $base-em * $ms1;
+$title3:                  $base-em * $ms2;
 $title2:                  $base-em * $ms3;
 $title1:                  $base-em * $ms4;
 
@@ -35,7 +35,7 @@ body {
   font-family: $base-font-family;
   font-weight: 400;
   font-size: $base-em * $ms0;
-  line-height: $base * $ms2;
+  line-height: $base * $ms3;
 }
 
 h3,
@@ -44,21 +44,35 @@ h1 { line-height: $base * $ms0; }
 
 h6, .h6 { font-size: $small; }
 h5, .h5 { font-size: $normal; }
-h4, .h4 { font-size: $big; }
-h3, .h3 { font-size: $bigger; }
+h4, .h4 { font-size: $bigger; }
+h3, .h3 { font-size: $title3; }
 h2, .h2 { font-size: $title2; }
 h1, .h1 { font-size: $title1; }
 
-@media #{$medium-up} {
-  body { font-size: $base-em * $ms1; }
+@mixin csslock-fontsize($breakpoint-down:$breakpoint-down, $breakpoint-up:$breakpoint-up, $size-down:$size-down, $size-up:$size-up) {
+  font-size: calc( 100% * #{$size-down} + ( (#{$size-up} - #{$size-down}) / #{$size-down} ) * (100vw - #{$breakpoint-down}rem) / (#{$breakpoint-up} - #{$breakpoint-down}) );
 }
 
-@media #{$large-up} {
-  body { font-size: $base-em * $ms2; }
+@media #{$medium-up} {
+  body {
+    font-size: $base-em * $ms0;
+    // from https://fvsch.com/code/css-locks/
+    @include csslock-fontsize($medium,$large,$ms0,$ms1);
+    line-height: $base * $ms2;
+  }
 }
 
 @media #{$xlarge-up} {
-  body { font-size: $base-em * $ms3; }
+  body {
+    font-size: $base-em * $ms1;
+    @include csslock-fontsize($medium,$xlarge,$ms1,$ms2);
+  }
+}
+
+@media #{$xxlarge-up} {
+  body {
+    font-size: $base-em * $ms2;
+  }
 }
 
 h1, .h1,
