@@ -37,6 +37,12 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
+// We need to revert these for Google maps cos else it breaks!
+%img--no-max,
+.img--no-max {
+  max-width: none;
+}
+
 
 // Figures
 // -------------------------
@@ -59,15 +65,15 @@ a {
     color: palette(primary);
   }
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: palette(primary, dark);
   }
   &:focus {
     outline: thin dotted;
   }
 
-  &:hover, &:active { 
-    outline: none; 
+  &:hover, &:active {
+    outline: none;
   }
 }
 
@@ -121,10 +127,10 @@ dd {
 // Blockquotes
 // -------------------------
 
-blockquote, 
+blockquote,
 blockquote p,
 q {
-  color: $grey-color; 
+  color: $grey-color;
 }
 
 blockquote {
@@ -137,18 +143,18 @@ blockquote {
   }
 }
 
-blockquote cite { 
-  display: block; 
+blockquote cite {
+  display: block;
   color: $grey-color-dark;
 }
 
-blockquote cite:before { 
-  content: "\2014 \0020"; 
+blockquote cite:before {
+  content: "\2014 \0020";
 }
 
-blockquote cite a, 
-blockquote cite a:visited { 
-  color: $grey-color-dark; 
+blockquote cite a,
+blockquote cite a:visited {
+  color: $grey-color-dark;
 }
 
 
