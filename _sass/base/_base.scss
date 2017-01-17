@@ -5,6 +5,7 @@
 html,
 body {
   box-sizing: border-box;
+  margin: 0;
 }
 
 *,
@@ -30,7 +31,10 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
   vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
 }
 
 
@@ -58,6 +62,13 @@ a {
     text-decoration: underline;
     color: palette(primary, dark);
   }
+  &:focus {
+    outline: thin dotted;
+  }
+
+  &:hover, &:active { 
+    outline: none; 
+  }
 }
 
 // Lists
@@ -82,12 +93,10 @@ ul,ol {
 // Inline turns list items into inline-block
 .list-inline {
   @extend .list-unstyled;
-  margin-left: -5px;
 
   > li {
     display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin: 0 -5px 0 0;
   }
 }
 
@@ -112,15 +121,34 @@ dd {
 // Blockquotes
 // -------------------------
 
+blockquote, 
+blockquote p,
+q {
+  color: $grey-color; 
+}
+
 blockquote {
   padding-left: $base-line / 2;
   font-size: $base-em * $ms1;
   letter-spacing: -1px;
-  color: $grey-color;
   border-left: 4px solid $grey-color;
   > :last-child {
     margin-bottom: 0;
   }
+}
+
+blockquote cite { 
+  display: block; 
+  color: $grey-color-dark;
+}
+
+blockquote cite:before { 
+  content: "\2014 \0020"; 
+}
+
+blockquote cite a, 
+blockquote cite a:visited { 
+  color: $grey-color-dark; 
 }
 
 
