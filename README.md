@@ -26,7 +26,7 @@ Jekyll requires Ruby so make sure Ruby is installed before you begin.
 
 
 ### Migrate an Existing Site
-**NOTE** This requires you to be upgraded to at least Jekyll 3.2 which added support for themes and assets.
+**NOTE** This requires you to be upgraded to at least Jekyll 3.3 which added support for themes and assets.
 
 - Download Overkyll Theme
   - Replace the line `gem "minima"` with this:
