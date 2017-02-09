@@ -2,6 +2,8 @@
 
 ![Screenshot of Overkyll](screenshot.png)
 
+## Presentation
+
 Fast and light, it can be use for a small blog or as a theme for starting a bigger site. Find the code of [overkyll on Github](https://github.com/bertrandkeller/overkyll-jekyll-theme)
 
 It implements this differents technologies :
@@ -49,7 +51,7 @@ Jekyll requires Ruby so make sure Ruby is installed before you begin.
   - Open `_config.yml` and change the line `theme: minima` to this:
     - `theme: overkyll-jekyll-theme`
 
-# Jekyll 2.x Method
+## Jekyll 2.x Method
 Jekyll requires Ruby so make sure Ruby is installed before you begin.
 
 - Download this site
