@@ -1,9 +1,14 @@
 <div class="skip-links">
-  <a href="#main">Main content</a>
+  <a href="#main">Contenu principal</a>
 </div>
+{% for page in site.html_pages %}
+  {% if page.navigation %}
+    {% assign loopindex = loopindex | plus: 1 %}
+  {% endif %}
+{% endfor %}
 <header class="site-header" role="banner">
 
-  <div class="wrapper">
+  <div class="wrapper {% if loopindex <= 3 %}wrapper--flex{% endif %}">
 
     <div class="site-logo">
       <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
@@ -11,7 +16,7 @@
 
     <nav class="nav-main" role="navigation">
       <ul>
-        {% for page in site.pages %}
+        {% for page in site.html_pages %}
           {% if page.navigation %}
           <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
           {% endif %}

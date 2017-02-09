@@ -23,9 +23,9 @@
 .pagination .disabled {
   padding: 1em 1.5em;
   color: #333;
-  border: 1px solid palette(grey);
+  border: 1px solid $color-grey;
   border-radius: 0.1875em;
-  background: palette(grey,light);
+  background: $color-grey-light;
   transition: all 0.2s ease-in-out;
 }
 
@@ -35,12 +35,12 @@
 
 .pagination a:hover,
 .pagination a:focus {
-  color: $brand-color;
+  color: $color-primary;
   background: white;
 }
 
 .pagination a:active {
-  background: palette(grey,light);
+  background: $color-grey-light;
 }
 
 .pagination .button {
@@ -50,12 +50,12 @@
 
 .button-disabled {
   opacity: 0.55;
-  background-color: palette(grey,dark);
+  background-color: $color-grey-dark;
 }
 
 .button-disabled:hover,
 .button-disabled:active,
 .button-disabled:focus {
   cursor: not-allowed;
-  background-color: palette(grey,dark);
+  background-color: $color-grey-dark;
 }

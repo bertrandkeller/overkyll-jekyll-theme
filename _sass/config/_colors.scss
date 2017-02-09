@@ -5,60 +5,40 @@
 // Better colors for development
 //-------------------------------------
 
-$navy:                    #001F3F;
-$blue:                    #0074D9;
-$aqua:                    #7FDBFF;
-$teal:                    #39CCCC;
-$olive:                   #3D9970;
-$green:                   #2ECC40;
-$lime:                    #01FF70;
-$yellow:                  #FFDC00;
-$orange:                  #FF851B;
-$red:                     #FF4136;
-$fuchsia:                 #F012BE;
-$purple:                  #B10DC9;
-$maroon:                  #85144B;
+$gray:                    #495057;
+$red:                     #f03e3e;
+$pink:                    #d6336c;
+$grape:                   #ae3ec9;
+$violet:                  #7048e8;
+$indigo:                  #4263eb;
+$blue:                    #1c7cd6;
+$cyan:                    #1098ad;
+$teal:                    #0ca678;
+$green:                   #37b24d;
+$lime:                    #74b816;
+$yellow:                  #f59f00;
+$orange:                  #f76707;
 
 
 // Site color
 //-------------------------------------
 
-$text-color:              #111;
-$background-color:        #fdfdfd;
-$brand-color:             #111;
-$color-primary:           $brand-color;
-$color-secondary:         $aqua;
+// Choose color among https://yeun.github.io/open-color/
 
-$grey-color:              #828282;
-$grey-color-light:        lighten($grey-color, 40%);
-$grey-color-dark:         darken($grey-color, 25%);
+$color-primary:           color(grey,7);
+$color-primary-light:     color(gray,2);
+$color-primary-dark:      color(gray,9);
 
+$color-secondary:         color(yellow,7);
+$color-secondary-light:   color(yellow,2);
+$color-secondary-dark:    color(yellow,8);
 
-// Color palette
-//-------------------------------------
+$color-grey:              color(gray,7);
+$color-grey-light:        color(gray,2);
+$color-grey-dark:         color(gray,9);
 
-$palettes: (
-    primary: (
-        base:   $color-primary,
-        light:  mix(white, $color-primary, 30%),
-        dark:   mix(black, $color-primary, 30%)
-    ),
-    secondary: (
-        base:   #ffa900,
-        light:  mix(white, $color-secondary, 30%),
-        dark:   mix(black, $color-secondary, 30%)
-    ),
-    grey: (
-        base:   #595959,
-        light:  rgba(0,0,0,0.12),
-        dark:   #353535
-    )
-);
-
-
-// Mixin for color palette
-//-------------------------------------
-
-@function palette($palette, $tone: 'base') {
-  @return map-get(map-get($palettes, $palette), $tone);
-}
+$title-color:             #000;
+$title-link-color:        #000;
+$text-color:              $color-grey-dark;
+$link-color:              #000;
+$background-color:        $color-grey-light;
