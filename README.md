@@ -2,6 +2,21 @@
 
 ![Screenshot of Overkyll](screenshot.png)
 
+## Presentation
+
+Fast and light, it can be use for a small blog or as a theme for starting a bigger site. Find the code of [overkyll on Github](https://github.com/bertrandkeller/overkyll-jekyll-theme)
+
+It implements this differents technologies :
+
+ 1. [ITCSS][itcss] architecture.
+ 2. [Modular scale][modular-scale] typography 
+ 3. [Unison JS][unison] Unifying named breakpoints across CSS, JS, and HTML
+ 4. [LocalFont][localFont] Implement localStorage web font caching in seconds
+ 5. [LoadingCSS][loadingCSS] A function for loading CSS asynchronously
+ 6. [Overpass][overpass] An open source webfont family inspired by Highway Gothic
+ 7. [Open Color][opencolor] Color optimized for UI like font, background, border, etc.
+ 8. [Css lock][csslock] Progressive increasing fontsize - in canal and river navigation
+
 ## Install as Gem Theme
 
 Jekyll requires Ruby so make sure Ruby is installed before you begin.
@@ -36,7 +51,7 @@ Jekyll requires Ruby so make sure Ruby is installed before you begin.
   - Open `_config.yml` and change the line `theme: minima` to this:
     - `theme: overkyll-jekyll-theme`
 
-# Jekyll 2.x Method
+## Jekyll 2.x Method
 Jekyll requires Ruby so make sure Ruby is installed before you begin.
 
 - Download this site
