@@ -102,7 +102,7 @@ ul,ol {
 
 dl {
   margin-top: 0; // Remove browser default
-  margin-bottom: $line-height-computed;
+  margin-bottom: $base-line;
 }
 dt,
 dd {
