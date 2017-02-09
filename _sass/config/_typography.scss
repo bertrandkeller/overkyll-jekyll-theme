@@ -109,8 +109,13 @@ h6, .h6 {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  &,a {
+  color: $title-color;
+  &,a,a:visited {
+    color: $title-link-color;
     text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }
 

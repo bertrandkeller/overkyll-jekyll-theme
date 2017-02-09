@@ -19,13 +19,6 @@ a {
   color: $color-primary;
 }
 
-// a[href]:not([class]) {
-//   text-decoration: underline;
-//   color: $color-primary;
-// }
-
-
-
 // Images
 // -------------------------
 
@@ -37,7 +30,7 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-// We need to revert these for Google maps cos else it breaks!
+// We need to revert these for Google maps cause else it breaks!
 %img--no-max,
 .img--no-max {
   max-width: none;
@@ -60,18 +53,16 @@ figcaption {
 
 a {
   text-decoration: underline;
-  color: palette(primary);
+  color: $link-color;
   &:visited {
-    color: palette(primary);
+    color: $link-color;
   }
   &:hover {
     text-decoration: none;
-    color: palette(primary, dark);
   }
   &:focus {
     outline: thin dotted;
   }
-
   &:hover, &:active {
     outline: none;
   }
@@ -130,14 +121,14 @@ dd {
 blockquote,
 blockquote p,
 q {
-  color: $grey-color;
+  color: $color-grey;
 }
 
 blockquote {
   padding-left: $base-line / 2;
   font-size: $base-em * $ms1;
   letter-spacing: -1px;
-  border-left: 4px solid $grey-color;
+  border-left: 4px solid $color-grey;
   > :last-child {
     margin-bottom: 0;
   }
@@ -145,7 +136,7 @@ blockquote {
 
 blockquote cite {
   display: block;
-  color: $grey-color-dark;
+  color: $color-grey-dark;
 }
 
 blockquote cite:before {
@@ -154,7 +145,7 @@ blockquote cite:before {
 
 blockquote cite a,
 blockquote cite a:visited {
-  color: $grey-color-dark;
+  color: $color-grey-dark;
 }
 
 
@@ -164,7 +155,7 @@ blockquote cite a:visited {
 pre,
 code {
   font-size: 15px;
-  border: 1px solid $grey-color-light;
+  border: 1px solid $color-grey-light;
   border-radius: 3px;
   background-color: #eef;
 }
