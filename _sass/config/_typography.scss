@@ -4,6 +4,7 @@
 
 // Our variables
 //-------------------------------------
+
 $base-font-family:        Overpass, Helvetica, Arial, sans-serif;
 
 $ratio:                   1.20;
@@ -35,6 +36,7 @@ body {
   font-weight: 400;
   font-size: $base-em * $ms0;
   line-height: $base * $ms3;
+  color: $text-color;
 }
 
 h3,
@@ -47,6 +49,10 @@ h4, .h4 { font-size: $bigger; }
 h3, .h3 { font-size: $title3; }
 h2, .h2 { font-size: $title2; }
 h1, .h1 { font-size: $title1; }
+
+
+// CSS Lock
+//-------------------------------------
 
 // Calculate progressive fontsize between 2 breapoint :: insert the value of your breakpoint and of your 2 fontsize value for each breakpoint
 // from https://fvsch.com/code/css-locks/
@@ -83,12 +89,16 @@ h1, .h1 { font-size: $title1; }
   }
 }
 
+
+// Heading margin and link
+//-------------------------------------
+
 h1, .h1,
 h2, .h2,
 h3, .h3 {
   word-wrap: break-word;
   margin-top: $base-line;
-  margin-bottom: ($base-line);
+  margin-bottom: $base-line;
 
   small,
   .small {
@@ -109,12 +119,12 @@ h6, .h6 {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  color: $title-color;
-  &,a,a:visited {
-    color: $title-link-color;
+  a,a:visited {
+    color: currentColor;
     text-decoration: none;
   }
   a:hover {
+    color: $link-color;
     text-decoration: underline;
   }
 }
