@@ -15,12 +15,12 @@ $number: 4; // for equal columns
 .page, .wrapper {
   margin-right: auto;
   margin-left: auto;
-  padding-right: $base-line / 2;
-  padding-left: $base-line / 2;
   max-width: 100%;
 }
 
 .wrapper {
+  padding-right: $base-line / 2;
+  padding-left: $base-line / 2;
   max-width: 40em;
 }
 
