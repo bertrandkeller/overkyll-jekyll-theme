@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: page
 title: Archives
 navigation: true
 ---
-
-<h1>Archives</h1>
 
 <div class="posts">
 {% for post in site.posts %}
