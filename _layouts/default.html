@@ -7,14 +7,12 @@ layout: default
 
   {% include head.html %}
 
-  <body itemscope itemtype="http://schema.org/WebPage">
+  <body class="page" itemscope itemtype="http://schema.org/WebPage">
 
     {% include header.html %}
 
-    <main id="main" class="page">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <main id="main">
+      {{ content }}
     </main>
     <script src={{ "/assets/js/instantclick.min.js" | relative_url }}  data-no-instant></script>
     <script data-no-instant>
