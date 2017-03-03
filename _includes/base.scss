@@ -3,6 +3,7 @@
 ////
 //// Import partials from `sass_dir` (defaults to `_sass`)
 
+@import "config/open-color";
 @import "config/colors";
 @import "config/mediaqueries";
 @import "config/typography";

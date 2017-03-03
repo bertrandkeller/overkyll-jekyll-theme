@@ -57,7 +57,7 @@ h1, .h1 { font-size: $title1; }
 // Calculate progressive fontsize between 2 breapoint :: insert the value of your breakpoint and of your 2 fontsize value for each breakpoint
 // from https://fvsch.com/code/css-locks/
 @mixin csslock-fontsize($breakpoint-down:$breakpoint-down, $breakpoint-up:$breakpoint-up, $size-down:$size-down, $size-up:$size-up) {
-  font-size: calc( 100% * #{$size-down} + ( (#{$size-up} - #{$size-down}) / #{$size-down} ) * (100vw - #{$breakpoint-down}rem) / (#{$breakpoint-up} - #{$breakpoint-down}) );
+  font-size: calc( #{100 * $size-down}% + ( (#{$size-up} - #{$size-down}) / #{$size-down} ) * (100vw - #{$breakpoint-down}rem) / (#{$breakpoint-up} - #{$breakpoint-down}) );
 }
 
 @media #{$medium-up} {
