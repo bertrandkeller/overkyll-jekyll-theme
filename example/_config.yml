@@ -26,7 +26,7 @@ github_username:  bertrandkeller
 
 # Build settings
 markdown: kramdown
-theme: overkyll-jekyll-theme
+theme: overkyll
 
 exclude:
   - Gemfile
