@@ -25,7 +25,7 @@ Jekyll requires Ruby so make sure Ruby is installed before you begin.
 - Install Jekyll and Bundler
   - `gem install jekyll bundler`
 - Create a New Site
-  - `jekyl new mysite`
+  - `jekyll new mysite`
 - Move into that directory
   - `cd mysite`
 - Verify
