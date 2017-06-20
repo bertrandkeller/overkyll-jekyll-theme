@@ -64,6 +64,7 @@ $xxlarge-only : "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (
 
 // Unison
 // speaking with JS with unison.js
+// http://bjork24.github.io/Unison/
 //-------------------------------------
 
 // config
@@ -72,8 +73,7 @@ $debug: false;
 // Unison media
 $mq-sync:
 usn-small           0,
-usn-medium          $medium * 1em,
-usn-large           $large * 1em
+usn-medium          $medium * 1em
 ;
 // usn-large          $large,
 // usn-x-large        $xlarge,

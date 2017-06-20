@@ -2,8 +2,6 @@
 /// Colors
 ////
 
-@import "open-color";
-
 // Better colors for development
 //-------------------------------------
 
@@ -27,13 +25,13 @@ $orange:                  #f76707;
 
 // Choose color among https://yeun.github.io/open-color/
 
-$color-primary:           color(grey,7);
+$color-primary:           color(gray,7);
 $color-primary-light:     color(gray,2);
 $color-primary-dark:      color(gray,9);
 
-$color-secondary:         color(yellow,7);
-$color-secondary-light:   color(yellow,2);
-$color-secondary-dark:    color(yellow,8);
+$color-secondary:         color(red,7);
+$color-secondary-light:   color(red,2);
+$color-secondary-dark:    color(red,8);
 
 $color-grey:              color(gray,7);
 $color-grey-light:        color(gray,2);
@@ -41,6 +39,6 @@ $color-grey-dark:         color(gray,9);
 
 $title-color:             #000;
 $title-link-color:        #000;
-$text-color:              $color-grey-dark;
+$text-color:              #000;
 $link-color:              #000;
-$background-color:        $color-grey-light;
+$background-color:        #000;
