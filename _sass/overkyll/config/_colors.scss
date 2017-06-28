@@ -1,0 +1,44 @@
+////
+/// Colors
+////
+
+// Better colors for development
+//-------------------------------------
+
+$gray:                    #495057;
+$red:                     #f03e3e;
+$pink:                    #d6336c;
+$grape:                   #ae3ec9;
+$violet:                  #7048e8;
+$indigo:                  #4263eb;
+$blue:                    #1c7cd6;
+$cyan:                    #1098ad;
+$teal:                    #0ca678;
+$green:                   #37b24d;
+$lime:                    #74b816;
+$yellow:                  #f59f00;
+$orange:                  #f76707;
+
+
+// Site color
+//-------------------------------------
+
+// Choose color among https://yeun.github.io/open-color/
+
+$color-primary:           color(gray,7) !default;
+$color-primary-light:     color(gray,2) !default;
+$color-primary-dark:      color(gray,9) !default;
+
+$color-secondary:         color(red,7) !default;
+$color-secondary-light:   color(red,2) !default;
+$color-secondary-dark:    color(red,8) !default;
+
+$color-grey:              color(gray,7) !default;
+$color-grey-light:        color(gray,2) !default;
+$color-grey-dark:         color(gray,9) !default;
+
+$title-color:             #000 !default;
+$title-link-color:        #000 !default;
+$text-color:              #000 !default;
+$link-color:              #000 !default;
+$background-color:        #000 !default;
