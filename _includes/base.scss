@@ -3,11 +3,14 @@
 ////
 //// Import partials from `sass_dir` (defaults to `_sass`)
 
-@import "config/open-color";
-@import "config/colors";
-@import "config/mediaqueries";
-@import "config/typography";
-@import "base/normalize";
-@import "base/base";
-@import "base/layout";
-
+@import "overkyll/config/open-color";
+@import "overkyll/config/colors";
+@import "overkyll/config/mediaqueries";
+@import "overkyll/config/typography";
+@import "overkyll/base/normalize";
+@import "overkyll/base/base";
+@import "overkyll/base/layout";
+@import "overkyll/base/font";
+@import "overkyll/generic/skiplink";
+@import "overkyll/object/header";
+@import "overkyll/object/navigation";
