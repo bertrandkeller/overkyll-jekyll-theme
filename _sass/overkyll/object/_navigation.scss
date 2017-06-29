@@ -36,7 +36,6 @@ nav {
       overflow-x: auto;
     }
     @media #{$medium-up} {
-      margin-top: 1rem;
       .wrapper--flex & {
         text-align: right;
       }
