@@ -1,0 +1,108 @@
+////
+/// Header
+////
+
+// Site Header
+.site-header {
+  position: relative;
+  margin-bottom: $base-line*2;
+  padding: $base-line 0 0;
+  text-align: center;
+  color: #fff;
+  z-index: 0;
+  @media #{$medium-up} {
+    padding-bottom: $base-line;
+  }
+  .wrapper {
+    @media #{$small-only} {
+      padding: 0;
+      max-width: 100%;
+    }
+  }
+  .wrapper--flex {
+    @media #{$medium-up} {
+      display: flex;
+      align-content: center;
+      align-items: flex-end;
+    }
+  }
+}
+
+.site-header-hero {
+  background: $color-grey;
+  background-image: linear-gradient(to top, $color-grey 0%, $color-grey-dark 100%);
+  a {
+    text-decoration: none;
+    color: currentColor;
+    &:visited {
+      color: currentColor;
+    }
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 1500ms ease-in-out;
+    
+    @at-root {
+      .site-header.b-lazy::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.site-title {
+  display: block;
+  margin: $base-line/2 auto;
+  font-size: $base-em * $ms3;
+  line-height: 1;
+  color: currentColor;
+  text-align: center;
+  text-decoration: none;
+  @media #{$medium-up} {
+    margin: 0 auto;
+  }
+}
+
+.site-title-link {
+  color: currentColor;
+  text-decoration: none;
+  &,&:visited {
+    color: currentColor;
+  }
+}
+
+.site-slogan {
+  text-align: center;
+  color: #fff;
+}
+
+// Exergue
+
+.exergue {
+  margin-top: -2*$base-line;
+  padding: $base-line;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: $color-grey-dark;
+  small {
+    display: block;
+    clear: both;
+    width: 100%;
+  }
+  a {
+    color: #fff;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

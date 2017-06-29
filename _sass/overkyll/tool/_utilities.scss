@@ -1,0 +1,97 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.center {
+  margin: 0 auto $line-height-base;
+  text-align: center;
+}
+
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
+ // List
+ // -------------------------
+
+@mixin list-inline {
+  padding: 0;
+  margin: 0 0 $base-line;
+  li {
+    display: inline-block;
+  }
+}
+
+
+// Toggling content
+// -------------------------
+// Note: Deprecated .hide in favor of .invisible
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.invisible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}
+
+
+// Icons
+// -------------------------
+
+.icon {
+  > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    path {
+      fill: $color-grey;
+    }
+  }
+}

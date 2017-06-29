@@ -1,0 +1,40 @@
+////
+/// Layout
+////
+
+$layout-max-width: 40em !default;
+$column-gutter: $base-em;
+$column-number: 4;
+
+// Page & Wrapper
+// -------------------------
+
+.page {
+  padding-bottom: $base-line*4;
+}
+
+.page, .wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+
+.wrapper {
+  padding-right: $base-line;
+  padding-left: $base-line;
+  max-width: $layout-max-width;
+}
+
+// Grid
+// -------------------------
+
+@mixin grid($column-number:$column-number, $column-gutter:$column-gutter) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($layout-max-width/$column-number, 1fr));
+  grid-gap: 2vmin;
+  margin-bottom: $base-line;
+}
+
+.grid {
+  @include grid();
+}
