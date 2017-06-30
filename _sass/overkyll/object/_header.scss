@@ -9,16 +9,12 @@
 .site-header {
   position: relative;
   margin-bottom: $base-line*2;
-  padding: $base-line 0 0;
+  padding: 0;
   text-align: center;
   color: #fff;
   z-index: 0;
-  @media #{$medium-up} {
-    padding-bottom: $base-line;
-  }
   .wrapper {
     @media #{$small-only} {
-      padding: 0;
       max-width: 100%;
     }
   }
@@ -34,15 +30,20 @@
 // Site header top :: logo and menu
 .site-header-top {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0 $base-line*2;
+  padding: $base-line/2;
   width: 100%;
   background: transparent;
+  @media #{$medium-up} {
+    flex-direction: row;
+  }
 }
 
 // Site header hero :: class on general container for hero header
 .site-header-hero {
+  padding: 0;
   background-size: cover;
   background-position: center center;
   background: $color-grey;
@@ -96,15 +97,11 @@
 // Site title :: container for a text
 .site-title {
   display: block;
-  margin: $base-line/2 auto;
+  margin: 0;
   font-size: $base-em * $ms3;
   line-height: 1;
   color: currentColor;
-  text-align: center;
   text-decoration: none;
-  @media #{$medium-up} {
-    margin: 0 auto;
-  }
 }
 
 // Site title hero :: class on site-title for hero title
@@ -122,6 +119,11 @@
   &,&:visited {
     color: currentColor;
   }
+}
+
+// Site information :: scope site-title + site-logo
+.site-information {
+  margin: 0;
 }
 
 // Site slogan

@@ -2,7 +2,7 @@
 /// Pagination
 ////
 
-.pagination {
+.pagination--prevnext {
   clear: both;
   @media #{$medium-up} {
     display: grid;
@@ -12,7 +12,7 @@
   margin: 3rem auto;
 }
 
-.pagination--left {
+.pagination--prev {
   padding-left: 1em;
   a:before {
     left: -1em;
@@ -20,7 +20,7 @@
   }
 }
 
-.pagination--right {
+.pagination--next {
   padding-right: 1em;
   text-align: right;
   a:before {

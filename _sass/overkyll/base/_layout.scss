@@ -4,7 +4,7 @@
 
 $layout-max-width: 40em !default;
 $column-gutter: $base-em;
-$column-number: 4;
+$column-number: 4 !default;
 
 // Page & Wrapper
 // -------------------------
@@ -30,7 +30,7 @@ $column-number: 4;
 
 @mixin grid($column-number:$column-number, $column-gutter:$column-gutter) {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax($layout-max-width/$column-number, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax($layout-max-width/($column-number+1), 1fr));
   grid-gap: 2vmin;
   margin-bottom: $base-line;
 }

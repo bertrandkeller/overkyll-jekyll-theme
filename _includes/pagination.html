@@ -1,18 +1,18 @@
 {% if page.previous || page.next %}
 
-<nav class="pagination" role="navigation">
+<nav class="pagination--prevnext" role="navigation">
 
   {% if page.previous %}
-  <div class="left">
-    <a class="pagination-item" href="{{ page.previous.url }}">
+  <div class="pagination--prev">
+    <a class="pagination--item" href="{{ page.previous.url }}">
       {{ page.previous.title }}
     </a>
   </div>
   {% endif %}
 
   {% if page.next %}
-  <div class="right">
-    <a class="pagination-item" href="{{ page.next.url }}">
+  <div class="pagination--next">
+    <a class="pagination--item" href="{{ page.next.url }}">
       {{ page.next.title }}
     </a>
   </div>
@@ -20,3 +20,5 @@
 
 </nav>
 {% endif %}
+
+
