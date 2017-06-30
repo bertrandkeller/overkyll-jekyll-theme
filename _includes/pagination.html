@@ -1,6 +1,6 @@
 {% if page.previous || page.next %}
 
-<div class="pagination--prevnext" role="navigation">
+<nav class="pagination--prevnext" role="navigation">
 
   {% if page.previous %}
   <div class="pagination--prev">
@@ -18,20 +18,7 @@
   </div>
   {% endif %}
 
-</div>
-{% else %}
-<div class="pagination--prevnext" role="navigation">
-  {% if page.title == 'Transmutation' %}
-    <div class="pagination--prev">
-      <a class="pagination--item" href="/2015/10/03/parisweb-cest-quoi-les-metiers-du-web">
-        ParisWeb - c'est quoi les métiers du web ?
-      </a>
-    </div>
-    <div class="pagination--next">
-      <a class="pagination--item" href="/2016/03/31/processus-edition/">
-        Mon processus d'édition
-      </a>
-    </div>
-  {% endif %}
-</div>
+</nav>
 {% endif %}
+
+
