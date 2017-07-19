@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "overkyll-jekyll-theme"
-  spec.version       = "0.7"
+  spec.version       = "0.9"
   spec.authors       = ["bertrandkeller"]
   spec.email         = ["bertrand.keller@gmail.com"]
 
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
   end
 
-  spec.add_development_dependency "jekyll", "~> 3.3"
+  spec.add_development_dependency "jekyll", "~> 3.5.1"
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
 end

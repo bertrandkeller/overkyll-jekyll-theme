@@ -9,22 +9,10 @@
 .site-header {
   position: relative;
   margin-bottom: $base-line*2;
-  padding: 0;
+  padding: 0 1em;
   text-align: center;
   color: #fff;
   z-index: 0;
-  .wrapper {
-    @media #{$small-only} {
-      max-width: 100%;
-    }
-  }
-  .wrapper--flex {
-    @media #{$medium-up} {
-      display: flex;
-      align-content: center;
-      align-items: center;
-    }
-  }
 }
 
 // Site header top :: logo and menu
@@ -33,7 +21,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: $base-line/2;
+  padding: $base-line/2 $base-line;
   width: 100%;
   background: transparent;
   @media #{$medium-up} {

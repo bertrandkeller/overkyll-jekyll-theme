@@ -15,7 +15,6 @@ nav {
 }
 
 .nav-main {
-  flex: 1;
   @media #{$small-only} {
     overflow-y: hidden !important;
     height: 40px !important;
