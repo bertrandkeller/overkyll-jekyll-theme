@@ -9,18 +9,21 @@ nav {
   ul {
     list-style: none;
   }
+  li {
+    display: inline-block;
+  }
   a {
     text-decoration: none;
   }
 }
 
 .nav-main {
-  flex: 1;
   @media #{$small-only} {
     overflow-y: hidden !important;
     height: 40px !important;
     border-top: 1px solid;
     border-bottom: 1px solid;
+    width: 100%;
   }
   ul {
     margin: 0;
@@ -45,7 +48,7 @@ nav {
     display: inline-block;
     text-align: center;
     margin: 0;
-    padding: 0.2rem 1.6rem 0;
+    padding: 0.2rem $base-line/2 0;
   }
   a {
     font-weight: bold;

@@ -4,10 +4,10 @@
 
 // Our variables
 //-------------------------------------
-$base-font-name:          -apple-system !default;
-$title-font-name:         -apple-system !default; 
-$base-font-family:        $base-font-name, system, sans-serif !default;
-$title-font-family:       $title-font-name, system, sans-serif !default;
+$base-font-name:          ;
+$title-font-name:         ;
+$base-font-family:        $base-font-name, -apple-system, system, sans-serif !default;
+$title-font-family:       $title-font-name, -apple-system, system, sans-serif !default;
 
 $ratio:                   1.20;
 $base:                    1;
