@@ -1,6 +1,7 @@
 # Overkyll Jekyll Theme
 
-![Screenshot of Overkyll](screenshot.png)
+![Screenshot of Overkyll](https://raw.githubusercontent.com/bertrandkeller/overkyll-jekyll-theme/gh-pages/screenshot.png
+)
 
 ## Presentation
 
