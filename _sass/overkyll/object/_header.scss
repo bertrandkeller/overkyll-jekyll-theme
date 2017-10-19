@@ -11,7 +11,7 @@
   margin-bottom: $base-line*2;
   padding: 0 1em;
   text-align: center;
-  color: #fff;
+  color: #000;
   z-index: 0;
 }
 
@@ -24,17 +24,24 @@
   padding: $base-line/2 $base-line;
   width: 100%;
   background: transparent;
+}
+
+// // Site header top :: making the logo and the menu on the same line
+.site-header-top__align {
   @media #{$medium-up} {
     flex-direction: row;
+    align-items: baseline;
   }
 }
+
 
 // Site header hero :: class on general container for hero header
 .site-header-hero {
   padding: 0;
+  color: #fff;
   background-size: cover;
   background-position: center center;
-  background: $color-grey;
+  background-color: $color-grey;
   background-image: linear-gradient(to top, $color-grey 0%, $color-grey-dark 100%);
   .wrapper {
     display: flex;
@@ -79,7 +86,8 @@
     z-index: -1;
     width: 100%;
     height: 100%;
-    transition: opacity 200ms ease-in-out;
+    opacity: 1;
+    transition: opacity 1500ms ease-in-out;
 }
 
 // Site title :: container for a text
