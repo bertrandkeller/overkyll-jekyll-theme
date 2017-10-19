@@ -22,13 +22,6 @@
   text-align: center;
 }
 
-.pull-right {
-  float: right !important;
-}
-.pull-left {
-  float: left !important;
-}
-
 .left {
   float: left;
 }
@@ -94,4 +87,42 @@
       fill: $color-grey;
     }
   }
+}
+
+// Aspect Ratio
+// -------------------------
+
+// https://www.bram.us/2017/06/16/aspect-ratios-in-css-are-a-hack/
+// https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_responsive-embed.scss
+
+.aspectratio {
+  position: relative;
+  display: block;
+  height: 0;
+  margin-bottom: $base-line;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+
+  iframe,
+  embed,
+  object,
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+}
+
+// Modifier class for 16:9 aspect ratio
+.aspectratio[data-ratio="16/9"] {
+  padding-top: 56.25%;
+}
+// Modifier class for 4:3 aspect ratio
+.aspectratio[data-ratio="4/3"] {
+  padding-top: 75%;
 }
