@@ -15,25 +15,12 @@ nav {
 }
 
 .nav-main {
-  @media #{$small-only} {
-    overflow-y: hidden !important;
-    height: 40px !important;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-  }
   ul {
     margin: 0;
-    padding: 0.3em 0;
+    padding: $base-line/6 0 $base-line/2;
     min-width: 100%;
     list-style: none;
-    text-align: center;
-    @media #{$small-only} {
-      display: block;
-      white-space: nowrap;
-      padding-bottom: 100px !important;
-      overflow-y: hidden;
-      overflow-x: auto;
-    }
+    text-align: left;
     @media #{$medium-up} {
       .wrapper--flex & {
         text-align: right;
@@ -51,5 +38,21 @@ nav {
     & + & {
        margin-left: 1em;
     }
+  }
+}
+
+.nav-main__scroll {
+  overflow-y: hidden;
+  height: 40px;
+  @media #{$small-only} {
+    width: 100vw;
+  }
+  ul {
+    display: block;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-bottom: 100px;
+    white-space: nowrap;
+    //text-align: center;
   }
 }

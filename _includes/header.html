@@ -2,12 +2,12 @@
   <a href="#main">Contenu principal</a>
 </div>
 <header class="site-header" role="banner">
-  <div class="site-header-top wrapper">
-      <div class="site-logo">
+  <div class="site-header-top site-header-top__align wrapper">
+      <p class="site-logo">
         <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-      </div>
+      </p>
 
-      <nav class="nav-main" role="navigation">
+      <nav class="nav-main nav-main__scroll" role="navigation">
         <ul>
           {% for page in site.html_pages %}
             {% if page.navigation %}
